@@ -27,3 +27,12 @@ npm run dev
 ## 部署
 
 优先使用 CloudBase Web 应用独立子域名，后续更新同一应用以维持 URL。部署需腾讯云账号授权与明确的 EnvId。`dist/` 为公开静态内容，不能放密钥。GitHub 仓库仅提交源代码、锁文件和部署说明，不提交 `.env`、`node_modules` 或 `dist`。
+
+### 当前部署
+
+- CloudBase 环境：`enterprise-compliance-as-dbb776f`
+- CloudBase 应用：`shanghai-termination-calculator`
+- CloudBase 地址：<https://shanghai-termination-4fbb895a-enterprise-compliance-as-dbb776f.webapps.tcloudbase.com/>
+- GitHub Pages：<https://annagong02.github.io/Shanghai-Termination-Compensation-Calculator/>
+
+CloudBase 默认域名会长期显示平台测试域名提示页；正式对外使用需绑定已备案的自定义域名。GitHub Pages 地址可作为无需提示页的公开备用地址。后续 CloudBase 更新应复用同一 `serviceName`，GitHub Pages 更新应推送到 `main`，从而保持两个访问地址不变。
